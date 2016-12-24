@@ -1,2 +1,0 @@
-# OLITS
-Projets OLITS
