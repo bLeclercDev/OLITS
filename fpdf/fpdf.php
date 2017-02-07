@@ -979,6 +979,7 @@ function SetXY($x, $y)
 
 function Output($dest='', $name='', $isUTF8=false)
 {
+	//ob_clean();//flush nécessaire suite à l'erreur : "FPDF error: Some data has already been output, can't send PDF file" , possibilité de le mettre dans la classe tpdf ? Brice Leclerc
 	// Output PDF to some destination
 	$this->Close();
 	if(strlen($name)==1 && strlen($dest)!=1)
